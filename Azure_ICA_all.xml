@@ -5981,6 +5981,29 @@
       <SupportedExecutionModes>AzureResourceManager</SupportedExecutionModes>
       <TestID>AzureTemplate_045</TestID>
     </test>
+    <test>
+      <testName>AZURE-SERVICE-BROKER</testName>
+      <testScript>AZURE-SERVICE-BROKER.py</testScript>
+      <testScriptPs1>AZURE-SERVICE-BROKER.ps1</testScriptPs1>
+      <files>create-sql-rg.sh,AZURE-SERVICE-BROKER.py,azuremodules.py</files>
+      <setupType>UNManagedCF</setupType>
+      <parameters>
+        <vmName></vmName>
+        <adminUsername></adminUsername>
+        <sshKeyData></sshKeyData>
+        <environment></environment>
+        <tenantID></tenantID>
+        <clientID></clientID>
+        <clientSecret></clientSecret>
+        <autoDeployBosh>enabled</autoDeployBosh>
+      </parameters>
+      <TestType>
+      </TestType>
+      <TestFeature>
+      </TestFeature>
+      <SupportedExecutionModes>AzureResourceManager</SupportedExecutionModes>
+      <TestID>AzureTemplate_046</TestID>
+    </test>
 		<!-- IMPORTED FROM LISA TEST DEFINITIONS -->
 		<test>
 			<testName>ICA-TERASORT-BENCHMARK-TEST</testName>

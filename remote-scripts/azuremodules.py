@@ -132,7 +132,7 @@ def DeployCF(cf_manifest_file):
         child = pexpect.spawn(cmd)
         index = child.expect(["Enter a password(?i)", pexpect.EOF, pexpect.TIMEOUT])
         if(index == 0):
-                child.sendline('\\n')
+                child.sendline('')
                 RunLog.info("type Enter key")
                 index = child.expect(["Type yes to continue", pexpect.EOF, pexpect.TIMEOUT])
                 if(index == 0):
